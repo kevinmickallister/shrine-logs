@@ -181,11 +181,15 @@ body.light-mode video#stars-bg {
   display: none;
 }
 
-/* Hide both videos by default */
 video#earth-bg,
 video#stars-bg {
   display: none;
 }
 
+body.light-mode video#earth-bg {
+  display: block;
+}
 
-
+body.dark-mode video#stars-bg {
+  display: block;
+}
