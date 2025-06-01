@@ -15,3 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const includes = document.querySelectorAll("[data-include]");
+    includes.forEach(async (el) => {
+      const file = el.getAttribute("data-include");
+      if (file) {
+        const res = await fetch(file);
+        const html = await res.text();
+        el.innerHTML = html;
+      }
+    });
+  });
+</script>
+
