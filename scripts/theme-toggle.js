@@ -9,8 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('theme-toggle');
   if (toggle) {
     toggle.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-      document.body.classList.toggle('dark-mode');
+      const isLight = document.body.classList.contains('light-mode');
+      document.body.classList.toggle('light-mode', !isLight);
+      document.body.classList.toggle('dark-mode', isLight);
     });
   }
 });
