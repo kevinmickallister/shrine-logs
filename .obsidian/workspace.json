@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "6e1446d00110b5f8",
+        "id": "9535dd16cfeebcb7",
         "type": "tabs",
         "children": [
           {
-            "id": "fe8e46f738e40ca0",
+            "id": "5ceadf5fa250d0bd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "README"
             }
           }
         ]
@@ -161,8 +165,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe8e46f738e40ca0",
+  "active": "293d993d02f6bea9",
   "lastOpenFiles": [
+    "fonts/AT-Kyrios-Variable.woff2",
+    "fonts",
+    "untitled folder",
+    "oscar-shrine-scroll.html",
+    "opening-letter.html",
+    "knight-block-transcript.html",
+    "AT-Kyrios-Variable.woff2",
+    "group_chat_shrine_log_20250519_194727.md",
+    "README.md",
     "index.html",
     "style.css"
   ]
