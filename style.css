@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Kyrios";
+  src: url("fonts/AT-Kyrios-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+h1, h2, h3 {
+  font-family: "Kyrios", serif;
+  font-variation-settings: "wght" 700;
+}
+
+
 body {
   background: #f9f6f2;
   font-family: 'Georgia', serif;
