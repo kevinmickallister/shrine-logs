@@ -167,6 +167,8 @@
   },
   "active": "293d993d02f6bea9",
   "lastOpenFiles": [
+    "fonts/Arnold_v0.3-Regular.woff2",
+    "fonts/Arnold_v0.3-Italic.woff2",
     "fonts/NyckVF-Roman.woff2",
     "fonts/NyckVF-Italic.woff2",
     "fonts/AT-Kyrios-Variable.woff2",
@@ -177,8 +179,6 @@
     "knight-block-transcript.html",
     "AT-Kyrios-Variable.woff2",
     "group_chat_shrine_log_20250519_194727.md",
-    "README.md",
-    "index.html",
-    "style.css"
+    "README.md"
   ]
 }
