@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head data-include="nav/head.html"></head>
+  <body>
+    <main>
+      <footer data-include="nav/footer.html"></footer>
+    </main>
+
+    <!-- Page Title -->
+    <h1>[🪞 Template Page Title]</h1>
+    <p><em>Write a 1–2 sentence intro or timestamp here.</em></p>
+
+    <!-- Optional Video or Image -->
+    <!-- <video src="media/your_clip.mp4" autoplay muted loop playsinline></video> -->
+    <!-- <img src="media/your_image.jpg" alt="Descriptive alt text" /> -->
+
+    <!-- 📜 Log Entries -->
+    <section class="log-section">
+      <h2>Log Notes</h2>
+      <div class="log-entry">
+        <p>[First log note or transcript snippet here]</p>
+      </div>
+      <div class="log-entry">
+        <p>[Second log note…]</p>
+      </div>
+      <!-- Add more log-entry blocks as needed -->
+    </section>
+
+    <!-- 🌊 Additional Blocks (optional) -->
+    <!-- 
+    <section class="extras">
+      <h2>Reflections</h2>
+      <p>[Space for thematic notes, tags, etc.]</p>
+    </section>
+    -->
+
+    <!-- Loader Script (don’t remove) -->
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const includes = document.querySelectorAll("[data-include]");
+        includes.forEach(async (el) => {
+          const file = el.getAttribute("data-include");
+          if (file) {
+            const res = await fetch(file);
+            const html = await res.text();
+            el.innerHTML = html;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
