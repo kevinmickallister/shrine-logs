@@ -1,5 +1,47 @@
 /* Shrine Logs Stylesheet */
 
+.nav {
+  position: sticky;
+  top: 0;
+  background: #fefefe;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  z-index: 999;
+}
+.nav a {
+  font-family: 'Arnold Regular', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  color: #333;
+}
+.nav a:hover {
+  color: #0077cc;
+}
+
+
+.log-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.log-section:last-child {
+  border-bottom: none;
+}
+
+.log-date {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 0.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 @font-face {
   font-family: 'Kyrios';
   src: url('fonts/AT-Kyrios-Variable.woff2') format('woff2');
