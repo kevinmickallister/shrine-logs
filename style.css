@@ -40,6 +40,11 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 body {
   font-family: 'Nyck Roman', system-ui, sans-serif;
   font-size: 18px;
@@ -51,6 +56,11 @@ body {
   max-width: 80ch;
   margin-left: auto;
   margin-right: auto;
+}
+
+body.dark-mode {
+  background-color: #0a0a0a;
+  color: #f7f7f7;
 }
 
 h1, h2, h3, h4 {
@@ -127,8 +137,6 @@ hr {
   margin: 3rem 0;
 }
 
-/* Extra visual polish */
-
 section {
   margin-bottom: 3rem;
 }
@@ -143,4 +151,32 @@ footer {
   font-size: 14px;
   text-align: center;
   color: #555;
+}
+
+video.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.25;
+  pointer-events: none;
+  transition: opacity 0.6s ease-in-out;
+}
+
+body.light-mode video#earth-bg {
+  display: block;
+}
+
+body.dark-mode video#earth-bg {
+  display: none;
+}
+
+body.dark-mode video#stars-bg {
+  display: block;
+}
+
+body.light-mode video#stars-bg {
+  display: none;
 }
