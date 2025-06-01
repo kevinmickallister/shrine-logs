@@ -1,58 +1,127 @@
+/* Shrine Logs — Custom CSS */
+
+/* 1. Import Fonts */
 @font-face {
-  font-family: "Kyrios";
-  src: url("fonts/AT-Kyrios-Variable.woff2") format("woff2");
+  font-family: 'Kyrios';
+  src: url('fonts/AT-Kyrios-Variable.woff2') format('woff2');
   font-weight: 100 900;
   font-display: swap;
 }
 
-h1, h2, h3 {
-  font-family: "Kyrios", serif;
-  font-variation-settings: "wght" 700;
+@font-face {
+  font-family: 'Nyck';
+  src: url('fonts/NyckVF-Roman.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
 }
 
+@font-face {
+  font-family: 'Nyck';
+  src: url('fonts/NyckVF-Italic.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
 
+/* 2. CSS Variables for Font Sizes and Line Heights */
+:root {
+  --font-h1: 68px;
+  --line-h1: 72px;
+  --font-h2: 56px;
+  --line-h2: 64px;
+  --font-h3: 44px;
+  --line-h3: 48px;
+  --font-h4: 28px;
+  --line-h4: 36px;
+  --font-h5: 16px;
+  --line-h5: 16px;
+  --font-h6: 12px;
+  --line-h6: 12px;
+
+  --font-body: 18px;
+  --line-body: 28px;
+  --font-body-small: 14px;
+  --line-body-small: 24px;
+  --font-body-medium: 16px;
+  --line-body-medium: 24px;
+}
+
+/* 3. Base Typography */
 body {
-  background: #f9f6f2;
-  font-family: 'Georgia', serif;
-  color: #333;
+  font-family: 'Nyck', sans-serif;
+  font-size: var(--font-body);
+  line-height: var(--line-body);
   margin: 0;
-  padding: 0;
+  color: #111;
+  background: #f9f9f9;
+  padding: 2rem;
 }
 
-.container {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: white;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  border-radius: 12px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kyrios', serif;
+  margin: 1.5rem 0 0.5rem;
+  line-height: 1.1;
 }
 
 h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: #5a3e85;
+  font-size: var(--font-h1);
+  line-height: var(--line-h1);
 }
 
-.tagline {
-  text-align: center;
-  font-style: italic;
-  margin-bottom: 2rem;
-  color: #777;
+h2 {
+  font-size: var(--font-h2);
+  line-height: var(--line-h2);
 }
 
-iframe {
-  width: 100%;
-  height: 600px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #fdfdfd;
+h3 {
+  font-size: var(--font-h3);
+  line-height: var(--line-h3);
 }
 
-footer {
-  margin-top: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #aaa;
+h4 {
+  font-size: var(--font-h4);
+  line-height: var(--line-h4);
+}
+
+h5 {
+  font-size: var(--font-h5);
+  line-height: var(--line-h5);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+h6 {
+  font-size: var(--font-h6);
+  line-height: var(--line-h6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--font-body);
+  line-height: var(--line-body);
+  margin: 1rem 0;
+}
+
+.small {
+  font-size: var(--font-body-small);
+  line-height: var(--line-body-small);
+}
+
+.medium {
+  font-size: var(--font-body-medium);
+  line-height: var(--line-body-medium);
+}
+
+/* 4. Links */
+a {
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
 }
