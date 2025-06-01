@@ -1,15 +1,15 @@
-/* Shrine Logs — Custom CSS */
+/* Shrine Logs Stylesheet */
 
-/* 1. Import Fonts */
 @font-face {
   font-family: 'Kyrios';
   src: url('fonts/AT-Kyrios-Variable.woff2') format('woff2');
   font-weight: 100 900;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Nyck';
+  font-family: 'Nyck Roman';
   src: url('fonts/NyckVF-Roman.woff2') format('woff2');
   font-weight: 100 900;
   font-style: normal;
@@ -17,111 +17,166 @@
 }
 
 @font-face {
-  font-family: 'Nyck';
+  font-family: 'Nyck Italic';
   src: url('fonts/NyckVF-Italic.woff2') format('woff2');
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
 }
 
-/* 2. CSS Variables for Font Sizes and Line Heights */
-:root {
-  --font-h1: 68px;
-  --line-h1: 72px;
-  --font-h2: 56px;
-  --line-h2: 64px;
-  --font-h3: 44px;
-  --line-h3: 48px;
-  --font-h4: 28px;
-  --line-h4: 36px;
-  --font-h5: 16px;
-  --line-h5: 16px;
-  --font-h6: 12px;
-  --line-h6: 12px;
-
-  --font-body: 18px;
-  --line-body: 28px;
-  --font-body-small: 14px;
-  --line-body-small: 24px;
-  --font-body-medium: 16px;
-  --line-body-medium: 24px;
+@font-face {
+  font-family: 'Arnold Regular';
+  src: url('fonts/Arnold_v0.3-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* 3. Base Typography */
+@font-face {
+  font-family: 'Arnold Italic';
+  src: url('fonts/Arnold_v0.3-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 body {
-  font-family: 'Nyck', sans-serif;
-  font-size: var(--font-body);
-  line-height: var(--line-body);
-  margin: 0;
+  font-family: 'Nyck Roman', system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
   color: #111;
-  background: #f9f9f9;
-  padding: 2rem;
+  background-color: #fefefe;
+  margin: 0;
+  padding: 0 1.5rem;
+  max-width: 80ch;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body.dark-mode {
+  background-color: #0a0a0a;
+  color: #f7f7f7;
+}
+
+h1, h2, h3, h4 {
   font-family: 'Kyrios', serif;
-  margin: 1.5rem 0 0.5rem;
+  font-weight: 800;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   line-height: 1.1;
 }
 
 h1 {
-  font-size: var(--font-h1);
-  line-height: var(--line-h1);
+  font-size: 68px;
+  line-height: 72px;
 }
 
 h2 {
-  font-size: var(--font-h2);
-  line-height: var(--line-h2);
+  font-size: 56px;
+  line-height: 64px;
 }
 
 h3 {
-  font-size: var(--font-h3);
-  line-height: var(--line-h3);
+  font-size: 44px;
+  line-height: 48px;
 }
 
 h4 {
-  font-size: var(--font-h4);
-  line-height: var(--line-h4);
+  font-size: 28px;
+  line-height: 36px;
 }
 
 h5 {
-  font-size: var(--font-h5);
-  line-height: var(--line-h5);
+  font-family: 'Arnold Regular', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
 }
 
 h6 {
-  font-size: var(--font-h6);
-  line-height: var(--line-h6);
+  font-family: 'Arnold Regular', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
-p {
-  font-size: var(--font-body);
-  line-height: var(--line-body);
-  margin: 1rem 0;
-}
-
-.small {
-  font-size: var(--font-body-small);
-  line-height: var(--line-body-small);
-}
-
-.medium {
-  font-size: var(--font-body-medium);
-  line-height: var(--line-body-medium);
-}
-
-/* 4. Links */
 a {
-  color: #0070f3;
+  color: #0077cc;
   text-decoration: none;
-  font-weight: 500;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-family: 'Nyck Italic', serif;
+}
+
+code {
+  font-family: monospace;
+  background: #f0f0f0;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 3rem 0;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+header {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+footer {
+  margin-top: 4rem;
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+}
+
+video.background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.25;
+  pointer-events: none;
+  transition: opacity 0.6s ease-in-out;
+}
+
+body.light-mode video#earth-bg {
+  display: block;
+}
+
+body.dark-mode video#earth-bg {
+  display: none;
+}
+
+body.dark-mode video#stars-bg {
+  display: block;
+}
+
+body.light-mode video#stars-bg {
+  display: none;
 }
