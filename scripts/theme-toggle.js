@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Apply default theme based on 7am–7pm window
+  // Apply default theme from 7am to before 7pm
   const now = new Date();
   const hour = now.getHours();
   const defaultMode = (hour >= 7 && hour < 19) ? 'light' : 'dark';
