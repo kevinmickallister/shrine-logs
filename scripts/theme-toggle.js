@@ -12,16 +12,27 @@ function setupThemeToggle() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Apply default theme based on 7am–7pm window
+  // Apply default theme from 7am to before 7pm
   const now = new Date();
   const hour = now.getHours();
   const defaultMode = (hour >= 7 && hour < 19) ? 'light' : 'dark';
-  document.body.classList.add(`${defaultMode}-mode`);
+  document.body.classList.add(`$defaultMode}-mode`);
 
   setupThemeToggle();
+
+  // Load external includes (Codex addition)
+  const includes = document.querySelectorAll("[data-include]");
+  includes.forEach(async (el) => {
+    const file = el.getAttribute("data-include");
+    if (file) {
+      const res = await fetch(file);
+      const html = await res.text();
+      el.innerHTML = html;
+    }
+  });
 });
 
+// Enable exports for testing (Codex addition)
 if (typeof module !== 'undefined') {
   module.exports = { handleThemeToggle };
 }
-
