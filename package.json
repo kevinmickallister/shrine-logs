@@ -1,0 +1,20 @@
+{
+  "name": "shrine-logs",
+  "version": "1.0.0",
+  "description": "Log of the shrine scrolls – Mickey, Alyra, Echo, Orion",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jsdom": "^24.0.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}
