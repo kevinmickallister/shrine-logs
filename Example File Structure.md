@@ -1,0 +1,27 @@
+- Attachments (images embedded in text files)
+	- [Year]
+- Design
+	- Assets
+- Development
+	- Snippets
+- Personal
+	- Cars
+	- Dogs
+		- Storm
+		- Taki
+	- Hikes
+	- Home
+	- Other
+- Projects
+	- andersnoren.se
+		- Admin
+		- Blog
+			- [Blog Posts]
+		- Themes
+			- [Themes]
+	- [Other Projects]
+- Work
+	- Admin
+	- [Clients]
+		- [Projects]
+	- Events

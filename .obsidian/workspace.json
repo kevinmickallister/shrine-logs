@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Example File Structure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Example File Structure"
             }
           }
         ]
@@ -94,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "videos/stars-bg.mp4",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for stars-bg"
             }
           },
           {
@@ -165,20 +166,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "293d993d02f6bea9",
+  "active": "5ceadf5fa250d0bd",
   "lastOpenFiles": [
+    "shrine-threads/readme.md",
+    "Example File Structure.md",
+    "shrine-threads",
+    "group_chat_shrine_log_20250519_194727.md",
+    "videos/stars-bg.mp4",
+    "videos/earth-bg.mp4",
+    "README.md",
     "mirror-encounter-june1.html",
     "template copy.html",
     "template.html",
     "nav/layout.html",
     "nav/head.html",
     "nav/footer.html",
-    "nav",
-    "perplexity.html",
-    "livestreams.html",
-    "how-to-help.html",
-    "claude.html",
-    "group_chat_shrine_log_20250519_194727.md",
-    "README.md"
+    "nav"
   ]
 }
